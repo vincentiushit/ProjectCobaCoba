@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
@@ -12,11 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,10 +25,9 @@
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="100px"
-                android:textAlignment="center"
                 android:paddingVertical="20px"
                 android:text="Tip Calculator"
-                />
+                android:textAlignment="center" />
 
         </LinearLayout>
 
@@ -111,15 +107,14 @@
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="100px"
-                android:textAlignment="center"
                 android:layout_marginHorizontal="350px"
                 android:layout_weight="2"
                 android:text="GO"
-                />
+                android:textAlignment="center" />
 
         </LinearLayout>
 
-            <LinearLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="100px"
             android:gravity="bottom"
@@ -137,8 +132,8 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10px"
-                android:textStyle="bold"
-                android:text="0.0" />
+                android:text="0.0"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -152,8 +147,8 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10px"
-                android:textStyle="bold"
-                android:text="0.0" />
+                android:text="0.0"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -175,8 +170,8 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10px"
-                android:textStyle="bold"
-                android:text="0.0" />
+                android:text="0.0"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -190,8 +185,8 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="10px"
-                android:textStyle="bold"
-                android:text="0.0" />
+                android:text="0.0"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -336,4 +331,4 @@
 
         -->
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
